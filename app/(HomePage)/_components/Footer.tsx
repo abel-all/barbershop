@@ -34,8 +34,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-col  gap-4 sm:items-end">
         <div className="flex gap-4">
-          {socialMediaNav.map(({ icon }) => (
-            <a href="#"><Image src={icon} alt="barber shop" height={20}/></a>
+          {socialMediaNav.map(({ icon }, i) => (
+            <a key={i} href="#"><Image src={icon} alt="barber shop" height={20}/></a>
           ))}
         </div>
         <div className="flex flex-col sm:items-end opacity-90">

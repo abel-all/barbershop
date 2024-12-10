@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ isLoding = false, content, width = "w-[6rem]" }) => {
   return (
-    <button className={`font-semibold bg-[#1b73e8] h-10 flex justify-center items-center gap-3 rounded-xl ${width} text-background`}>
+    <button className={`font-semibold bg-primary h-10 flex justify-center items-center gap-3 rounded-xl ${width} text-background`}>
         {isLoding ? <span className='loader'></span> : <>{content}</>}
     </button>
   )
