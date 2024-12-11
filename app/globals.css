@@ -34,3 +34,22 @@ body {
       transform: rotate(360deg);
   }
   }
+
+  .custome-text-style {
+    @apply text-[3rem] tracking-[-0.2rem] leading-[4.25rem] max-md:text-[3rem] max-md:tracking-[-0.15625rem] max-md:leading-[3.5rem] max-sm:text-[2rem] max-sm:tracking-[-0.125rem] max-sm:leading-[2.25rem]
+  }
+
+  .animate-scrolling {
+    animation: slideDown 1s ease-out forwards;
+  }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

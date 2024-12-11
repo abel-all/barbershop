@@ -6,7 +6,7 @@ const layout = ({ children } : { children : ReactNode}) => {
   return (
     <div className='h-full'>
       <Header/>
-      <main className='pt-14 h-[2000px]'>
+      <main className='py-14'>
         {children}
       </main>
       <Footer/>
