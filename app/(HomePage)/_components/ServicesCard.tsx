@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import Button from '@/components/Button'
+import Link from 'next/link';
 
 interface ServicesCardProps {
     image: StaticImageData;
@@ -19,7 +20,9 @@ const ServicesCard : React.FC<ServicesCardProps> = ({ image, header, description
                 <div className='font-bold text-2xl max-md:text-xl'>{header}</div>
                 <div className='text-xl lg:max-w-44 max-md:text-base opacity-80'>{description}</div>
             </div>
-            <Button width={"w-[8rem]"} content={price}/>
+            <Link href="/login">
+              <Button width={"w-[8rem]"} content={price}/>
+            </Link>
         </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 const HeroSection = () => {
 
@@ -10,9 +11,9 @@ const HeroSection = () => {
           <div className='text-background font-bold text-center custome-text-style animate-scrolling'>
             Your hair, <span className='text-primary'>your rules.</span><br/>We’re just here to help.
           </div>
-          <div className='flex justify-center animate-scrolling'>
+          <Link className='flex justify-center animate-scrolling' href="/login">
             <Button content="Book now"/>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
